@@ -57,7 +57,7 @@ Use
 
 	services:
 		authenticator:
-			class: foglcz\ldap\Authenticator(%ldap%, "yourcompany.com", "yourcomany.local") # Third parameter optional, used if you have different e-mail domains than the AD domain.
+			class: foglcz\LDAP\Authenticator(%ldap%, "yourcompany.com", "yourcomany.local") # Third parameter optional, used if you have different e-mail domains than the AD domain.
 			setup:
 				- addSuccessHandler('id', [@userManager, 'getAuthId'])
 	```
